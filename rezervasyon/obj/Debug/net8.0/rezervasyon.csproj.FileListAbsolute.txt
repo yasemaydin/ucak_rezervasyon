@@ -15,3 +15,4 @@ C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\refint\rezer
 C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.pdb
 C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.genruntimeconfig.cache
 C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\ref\rezervasyon.dll
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.sourcelink.json

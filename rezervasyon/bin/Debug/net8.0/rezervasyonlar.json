@@ -103,5 +103,173 @@
     "Soyad": "Aydin",
     "Yas": 21,
     "BiletNo": 5
+  },
+  {
+    "Id": 6,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 200
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Yasemin",
+    "Soyad": "Aydin",
+    "Yas": 21,
+    "BiletNo": 6
+  },
+  {
+    "Id": 7,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 199
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Yasemin",
+    "Soyad": "Aydin",
+    "Yas": 21,
+    "BiletNo": 7
+  },
+  {
+    "Id": 8,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 198
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Yasemin",
+    "Soyad": "Aydin",
+    "Yas": 21,
+    "BiletNo": 8
+  },
+  {
+    "Id": 9,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 197
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Yasemin",
+    "Soyad": "S",
+    "Yas": 21,
+    "BiletNo": 9
+  },
+  {
+    "Id": 10,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 196
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Yasemin",
+    "Soyad": "Aydin",
+    "Yas": 21,
+    "BiletNo": 10
+  },
+  {
+    "Id": 11,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 195
+      },
+      "AktifPasif": true
+    },
+    "Ad": "enes",
+    "Soyad": "salman",
+    "Yas": 21,
+    "BiletNo": 11
+  },
+  {
+    "Id": 12,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 194
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Enes",
+    "Soyad": "Salman",
+    "Yas": 21,
+    "BiletNo": 12
+  },
+  {
+    "Id": 13,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 193
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Yasmin",
+    "Soyad": "Aydin",
+    "Yas": 21,
+    "BiletNo": 13
   }
 ]

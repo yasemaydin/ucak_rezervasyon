@@ -51,80 +51,125 @@ class Program
 
     static void Main()
     {
-        // JSON dosyalarından verileri okuma
-        ReadDataFromJsonFiles();
+        do {
+            // JSON dosyalarından verileri okuma
+            ReadDataFromJsonFiles();
 
-        // Örnek verileri eklemek için fonksiyon
-        PopulateSampleData();
+            // Örnek verileri eklemek için fonksiyon
+            PopulateSampleData();
 
-        Console.WriteLine("Lokasyon girin: ");
-        string hedefSehir = Console.ReadLine();
+            Console.WriteLine("Lokasyon girin: ");
+            string hedefSehir = Console.ReadLine();
 
-        Lokasyon hedefLokasyon = lokasyonlar.Find(l => l.Sehir.Equals(hedefSehir, StringComparison.OrdinalIgnoreCase) && l.AktifPasif);
+            Lokasyon hedefLokasyon = lokasyonlar.Find(l => l.Sehir.Equals(hedefSehir, StringComparison.OrdinalIgnoreCase) && l.AktifPasif);
 
-        if (hedefLokasyon != null)
-        {
-            List<Ucus> availableFlights = ucuslar.FindAll(u => u.LokasyonId == hedefLokasyon.LokasyonId && u.AktifPasif);
-
-            Console.WriteLine($"{availableFlights.Count} adet sefer bulundu");
-
-            foreach (Ucus u in availableFlights)
+            if (hedefLokasyon != null)
             {
-                Console.WriteLine($"{u.UcusId} {u.Ucak.Marka} {u.Ucak.Model} {u.Ucak.SeriNo} {u.Tarih} {u.Saat} (toplam {u.Ucak.Kapasitesi} koltuk müsait)");
-            }
+                List<Ucus> availableFlights = ucuslar.FindAll(u => u.LokasyonId == hedefLokasyon.LokasyonId && u.AktifPasif);
 
-            Console.WriteLine("Uçuş seçiniz: ");
-            int secilenUcusId = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"{availableFlights.Count} adet sefer bulundu");
 
-            Ucus secilenUcus = availableFlights.Find(u => u.UcusId == secilenUcusId);
-
-            if (secilenUcus != null)
-            {
-                Console.WriteLine("Ad: ");
-                string ad = Console.ReadLine();
-
-                Console.WriteLine("Soyad: ");
-                string soyad = Console.ReadLine();
-
-                Console.WriteLine("Yaş: ");
-                int yas = Convert.ToInt32(Console.ReadLine());
-
-                if (secilenUcus.Ucak.Kapasitesi > rezervasyonlar.Count(r => r.Ucus.UcusId == secilenUcus.UcusId))
+                foreach (Ucus u in availableFlights)
                 {
-                    int yeniBiletNo = rezervasyonlar.Count + 1;
-                    Rezervasyon yeniRezervasyon = new Rezervasyon
+                    Console.WriteLine($"{u.UcusId} {u.Ucak.Marka} {u.Ucak.Model} {u.Ucak.SeriNo} {u.Tarih} {u.Saat} (toplam {u.Ucak.Kapasitesi} koltuk müsait)");
+                }
+
+                Console.WriteLine("Uçuş seçiniz: ");
+                int secilenUcusId = Convert.ToInt32(Console.ReadLine());
+
+                Ucus secilenUcus = availableFlights.Find(u => u.UcusId == secilenUcusId);
+                string ReadNonEmptyString()
+                {
+                    string input = Console.ReadLine();
+
+                    while (string.IsNullOrEmpty(input))
                     {
-                        Id = rezervasyonlar.Count + 1,
-                        Ucus = secilenUcus,
-                        Ad = ad,
-                        Soyad = soyad,
-                        Yas = yas,
-                        BiletNo = yeniBiletNo
-                    };
+                        Console.WriteLine("Hata: Boş bırakılamaz. Lütfen bir değer girin.");
+                        input = Console.ReadLine();
+                    }
 
-                    rezervasyonlar.Add(yeniRezervasyon);
+                    return input;
+                }
 
-                    Console.WriteLine($"{secilenUcus.Tarih} {secilenUcus.LokasyonId} uçuşuna 1 adet rezervasyon yapılmıştır bilet no: {yeniBiletNo}");
+                int ReadValidIntegerInput()
+                {
+                    int result = 0;
+                    bool isValidInput = false;
+
+                    while (!isValidInput)
+                    {
+                        string input = Console.ReadLine();
+
+                        if (string.IsNullOrEmpty(input))
+                        {
+                            Console.WriteLine("Hata: Boş bırakılamaz. Lütfen bir değer girin.");
+                        }
+                        else if (!int.TryParse(input, out result))
+                        {
+                            Console.WriteLine("Hata: Geçerli bir sayı değil. Lütfen geçerli bir sayı girin.");
+                        }
+                        else
+                        {
+                            isValidInput = true;
+                        }
+                    }
+
+                    return result;
+                }
+                if (secilenUcus != null)
+                {
+                    Console.WriteLine("Ad: ");
+                    string ad = ReadNonEmptyString();
+
+                    Console.WriteLine("Soyad: ");
+                    string soyad = ReadNonEmptyString();
+
+                    Console.WriteLine("Yaş: ");
+                    int yas = ReadValidIntegerInput();
+
+                    if (secilenUcus.Ucak.Kapasitesi > rezervasyonlar.Count(r => r.Ucus.UcusId == secilenUcus.UcusId))
+                    {
+                        int yeniBiletNo = rezervasyonlar.Count + 1;
+                        Rezervasyon yeniRezervasyon = new Rezervasyon
+                        {
+                            Id = rezervasyonlar.Count + 1,
+                            Ucus = secilenUcus,
+                            Ad = ad,
+                            Soyad = soyad,
+                            Yas = yas,
+                            BiletNo = yeniBiletNo
+                        };
+
+                        rezervasyonlar.Add(yeniRezervasyon);
+                        // Uçağın kapasitesini azalt
+                        secilenUcus.Ucak.Kapasitesi--;
+                        string lokasyonBilgisi = $"{hedefLokasyon.Sehir} Havalimanı";
+                        string ucmakBilgisi = $"{secilenUcus.Ucak.Marka} {secilenUcus.Ucak.Model} model uçağa";
+
+                        Console.WriteLine($"{secilenUcus.Tarih} {secilenUcus.Saat} {lokasyonBilgisi}'ndan kalkacak olan {ucmakBilgisi} ait {secilenUcus.UcusId} numaralı uçuşa 1 adet rezervasyon yapılmıştır. Bilet no: {yeniBiletNo}");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Üzgünüz, seçilen uçuş için boş koltuk kalmamıştır.");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Üzgünüz, seçilen uçuş için boş koltuk kalmamıştır.");
+                    Console.WriteLine("Geçersiz uçuş seçildi.");
                 }
             }
             else
             {
-                Console.WriteLine("Geçersiz uçuş seçildi.");
+                Console.WriteLine("Geçersiz lokasyon.");
             }
-        }
-        else
-        {
-            Console.WriteLine("Geçersiz lokasyon.");
-        }
 
-        // JSON dosyalarına verileri kaydetme
-        SaveDataToJsonFiles();
+            // JSON dosyalarına verileri kaydetme
+            SaveDataToJsonFiles();
+            Console.WriteLine("Başka bir işlem yapmak ister misiniz? (e/h)");
+
+        } while (Console.ReadLine().Trim().Equals("e", StringComparison.OrdinalIgnoreCase));
     }
-
     static void ReadDataFromJsonFiles()
     {
         if (File.Exists("ucaklar.json"))
