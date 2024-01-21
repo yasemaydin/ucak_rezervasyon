@@ -1,0 +1,107 @@
+[
+  {
+    "Id": 1,
+    "Ucus": {
+      "UcusId": 1,
+      "LokasyonId": 1,
+      "Tarih": "2024-01-22T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T08:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 1,
+        "Model": "737",
+        "Marka": "Boeing",
+        "SeriNo": "12345",
+        "Kapasitesi": 100
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Emrah",
+    "Soyad": "Sarıçiçek",
+    "Yas": 32,
+    "BiletNo": 1
+  },
+  {
+    "Id": 2,
+    "Ucus": {
+      "UcusId": 2,
+      "LokasyonId": 1,
+      "Tarih": "2024-01-23T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T10:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 2,
+        "Model": "A320",
+        "Marka": "Airbus",
+        "SeriNo": "67890",
+        "Kapasitesi": 150
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Ayşe",
+    "Soyad": "Yılmaz",
+    "Yas": 28,
+    "BiletNo": 2
+  },
+  {
+    "Id": 3,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 200
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Mehmet",
+    "Soyad": "Aydın",
+    "Yas": 35,
+    "BiletNo": 3
+  },
+  {
+    "Id": 4,
+    "Ucus": {
+      "UcusId": 4,
+      "LokasyonId": 3,
+      "Tarih": "2024-01-25T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T11:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 4,
+        "Model": "A380",
+        "Marka": "Airbus",
+        "SeriNo": "98765",
+        "Kapasitesi": 300
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Zeynep",
+    "Soyad": "Kaya",
+    "Yas": 25,
+    "BiletNo": 4
+  },
+  {
+    "Id": 5,
+    "Ucus": {
+      "UcusId": 3,
+      "LokasyonId": 2,
+      "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+      "Saat": "2024-01-22T07:36:13.1411976+03:00",
+      "Ucak": {
+        "UcakId": 3,
+        "Model": "747",
+        "Marka": "Boeing",
+        "SeriNo": "54321",
+        "Kapasitesi": 200
+      },
+      "AktifPasif": true
+    },
+    "Ad": "Yasemin",
+    "Soyad": "Aydin",
+    "Yas": 21,
+    "BiletNo": 5
+  }
+]

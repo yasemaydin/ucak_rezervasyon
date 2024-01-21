@@ -1,0 +1,30 @@
+[
+  {
+    "UcakId": 1,
+    "Model": "737",
+    "Marka": "Boeing",
+    "SeriNo": "12345",
+    "Kapasitesi": 100
+  },
+  {
+    "UcakId": 2,
+    "Model": "A320",
+    "Marka": "Airbus",
+    "SeriNo": "67890",
+    "Kapasitesi": 150
+  },
+  {
+    "UcakId": 3,
+    "Model": "747",
+    "Marka": "Boeing",
+    "SeriNo": "54321",
+    "Kapasitesi": 200
+  },
+  {
+    "UcakId": 4,
+    "Model": "A380",
+    "Marka": "Airbus",
+    "SeriNo": "98765",
+    "Kapasitesi": 300
+  }
+]

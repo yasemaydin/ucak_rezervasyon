@@ -1,0 +1,17 @@
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.AssemblyInfoInputs.cache
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.AssemblyInfo.cs
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.csproj.CoreCompileInputs.cache
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.csproj.AssemblyReference.cache
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\bin\Debug\net8.0\rezervasyon.exe
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\bin\Debug\net8.0\rezervasyon.deps.json
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\bin\Debug\net8.0\rezervasyon.runtimeconfig.json
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\bin\Debug\net8.0\rezervasyon.dll
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\bin\Debug\net8.0\rezervasyon.pdb
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.csproj.CopyComplete
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.dll
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\refint\rezervasyon.dll
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.pdb
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\rezervasyon.genruntimeconfig.cache
+C:\Users\Enes\source\repos\rezervasyon\rezervasyon\obj\Debug\net8.0\ref\rezervasyon.dll

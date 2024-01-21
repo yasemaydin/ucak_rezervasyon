@@ -1,0 +1,30 @@
+[
+  {
+    "LokasyonId": 1,
+    "Sehir": "İstanbul",
+    "Ulke": "Türkiye",
+    "Havaalani": "IST",
+    "AktifPasif": true
+  },
+  {
+    "LokasyonId": 2,
+    "Sehir": "Ankara",
+    "Ulke": "Türkiye",
+    "Havaalani": "ESB",
+    "AktifPasif": true
+  },
+  {
+    "LokasyonId": 3,
+    "Sehir": "Paris",
+    "Ulke": "Fransa",
+    "Havaalani": "CDG",
+    "AktifPasif": true
+  },
+  {
+    "LokasyonId": 4,
+    "Sehir": "New York",
+    "Ulke": "ABD",
+    "Havaalani": "JFK",
+    "AktifPasif": true
+  }
+]

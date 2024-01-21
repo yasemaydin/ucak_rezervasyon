@@ -1,0 +1,58 @@
+[
+  {
+    "UcusId": 1,
+    "LokasyonId": 1,
+    "Tarih": "2024-01-22T17:36:13.1411976+03:00",
+    "Saat": "2024-01-22T08:36:13.1411976+03:00",
+    "Ucak": {
+      "UcakId": 1,
+      "Model": "737",
+      "Marka": "Boeing",
+      "SeriNo": "12345",
+      "Kapasitesi": 100
+    },
+    "AktifPasif": true
+  },
+  {
+    "UcusId": 2,
+    "LokasyonId": 1,
+    "Tarih": "2024-01-23T17:36:13.1411976+03:00",
+    "Saat": "2024-01-22T10:36:13.1411976+03:00",
+    "Ucak": {
+      "UcakId": 2,
+      "Model": "A320",
+      "Marka": "Airbus",
+      "SeriNo": "67890",
+      "Kapasitesi": 150
+    },
+    "AktifPasif": true
+  },
+  {
+    "UcusId": 3,
+    "LokasyonId": 2,
+    "Tarih": "2024-01-24T17:36:13.1411976+03:00",
+    "Saat": "2024-01-22T07:36:13.1411976+03:00",
+    "Ucak": {
+      "UcakId": 3,
+      "Model": "747",
+      "Marka": "Boeing",
+      "SeriNo": "54321",
+      "Kapasitesi": 200
+    },
+    "AktifPasif": true
+  },
+  {
+    "UcusId": 4,
+    "LokasyonId": 3,
+    "Tarih": "2024-01-25T17:36:13.1411976+03:00",
+    "Saat": "2024-01-22T11:36:13.1411976+03:00",
+    "Ucak": {
+      "UcakId": 4,
+      "Model": "A380",
+      "Marka": "Airbus",
+      "SeriNo": "98765",
+      "Kapasitesi": 300
+    },
+    "AktifPasif": true
+  }
+]
